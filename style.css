@@ -1,15 +1,30 @@
-@charset "UTF-8";
-body {color: #ffffff;}
 @font-face {
-    font-family: "Saitamaar";
-    src: url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff2") format("woff2"),
-      url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff") format("woff"),
-      url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.ttf") format("ttf");
-    font-display: swap;
-  }
-  .Saitamaar {
-    font-family: "Saitamaar";
+  font-family: "Saitamaar";
+  src: url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff2") format("woff2"),
+    url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff") format("woff"),
+    url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.ttf") format("ttf");
+  font-display: swap;
+}
+
+
+.section {
+    text-align:center;
+    font-size: 3em;
+    color: white;
+}
+
+.aa {
+    font-family: Saitamaar;
+    color: black;
     white-space: pre;
     font-size: 16px;
-    line-height: 18px;
-  }
+    line-height: 15px;
+}
+
+#fp-nav ul li a span {
+    background: white;
+}
+
+.concept {
+    font-size: 120px;
+}
