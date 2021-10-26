@@ -1,11 +1,6 @@
-@font-face {
-  font-family: "Saitamaar";
-  src: url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff2") format("woff2"),
-    url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.woff") format("woff"),
-    url("https://fonts-aahub.netlify.com/assets/fonts/Saitamaar/Saitamaar.ttf") format("ttf");
-  font-display: swap;
+.title{
+  width: 600px;
 }
-
 
 .section {
     text-align:center;
@@ -13,18 +8,14 @@
     color: white;
 }
 
-.aa {
-    font-family: Saitamaar;
-    color: black;
-    white-space: pre;
-    font-size: 16px;
-    line-height: 15px;
-}
-
 #fp-nav ul li a span {
     background: white;
 }
 
+.slogan {
+    font-size: 150px;
+}
+
 .concept {
-    font-size: 120px;
+  font-size: 90px;
 }
