@@ -8,8 +8,8 @@
     <body>
         <div id="fullpage">
             <div class="section">
-                <div class="container">
-                    <div class="row d-flex align-items-center .justify-content-center">
+                <div class="slide slide01">
+                    <div class="row d-flex align-items-center .justify-content-center ">
                         <div class="col-md-8 col-md-offset-4"><img src="image/title.png" alt="title_img" class="title"></div>
                     </div>
                     <div class="row d-flex align-items-center .justify-content-center">
@@ -18,44 +18,46 @@
                 </div>
             </div>
             <div class="section">
-                <div class="container">
+                <div class="slide slide01">
                     <div class="row d-flex align-items-center .justify-content-center">
-                      <div class="col-8"><h3 class="slogan">catch copy</h3></div>
-                      <div class="col-4"><h2 class="concept">concept<br>concept</h2></div>
+                      <div class="col-md-8 .text-nowrap"><h3 class="slogan">catch copy</h3></div>
+                      <div class="col-md-4"><h2 class="concept">concept<br>concept</h2></div>
                     </div>
                     <div class="row d-flex align-items-center .justify-content-center">
-                        <div class="col-9">text text text text text text text text<br>text text text text text text text text<br>text text text text text text text text</div>
-                        <div class="col-3"><img src="image/anime.gif" alt="gif_anime" class="img-fluid"></div>
+                        <div class="col-md-9"><p class="text">text text text text text text text text<br>text text text text text text text text<br>text text text text text text text text</p></div>
+                        <div class="col-md-3"><img src="image/anime.gif" alt="gif_anime" class="img-fluid"></div>
                       </div>
+                  </div>
+            </div>
+            <div class="section">
+                <div class="slide slide01">
+                    <h2 class="concept">notice</h2>
+                    <p>色んな種類の吹き出しをポップアップの動きつきで表示<br>吹き出しはカーソルを乗せると揺れる<br>（「Game_1 10万DL突破」「Game_2 開発中」など画像つきで）</p>
                   </div>
             </div>
             <div class="section">
                 <div class="slide slide01">
                     <div class="row">
                         <div class="col-5 youtube-explain">
-                            説明<br>
-                            ユニコぉぉぉぉぉぉぉぉぉぉぉん！！！
+                            <h2 class="concept">Game1</h2><br>
+                            <p class="text">text text text text text<br>text text text text text<br>text text text text text</p>
                         </div>
                         <div class="col-7">
-                            <iframe width="70%" height="70%"
-                                src="https://www.youtube.com/embed/vdxoDyNAoH0?loop=1&playlist=vdxoDyNAoH0&autoplay=1&mute=1&rel=0&modestbranding=1"
+                            <iframe width="80%" height="80%"
+                                src="https://www.youtube.com/embed/5eMNbID8INM"
                                 frameborder="0" allowfullscreen>
                             </iframe>
                         </div>
                     </div>
                 </div>
                 <div class="slide slide02">
-                    <h1>text2</h1>
+                  <h2>b</h2>
                 </div>
             </div>
             <div class="section">
-              <div class="slide slide01">
-                <h2>a</h2>
-              </div>
-              <div class="slide slide02">
-                <h2>b</h2>
-              </div>
-            
+                <div class="slide slide01">
+                    <h2>会社概要やリンク、Twitter埋め込み</h2>
+                  </div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -66,7 +68,7 @@
             jQuery(function () {
                 jQuery('#fullpage').fullpage({
                     scrollOverflow:true,
-                    sectionsColor: ['yellow', '#00cccc', '#ff9900', '#99ff00'],
+                    sectionsColor: ['#ffd900', '#00cccc', '#ff9900', '#44ff00', '#962dff'],
                     navigation: true,
                     navigationPosition: 'right',
                     navigationTooltips: ['firstSlide', 'secondSlide',],
