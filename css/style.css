@@ -3,19 +3,23 @@
 }
 
 .section {
-    text-align:center;
-    font-size: 3em;
-    color: white;
+  text-align:center;
+  font-size: 3em;
+  color: white;
 }
 
 #fp-nav ul li a span {
-    background: white;
+  background: white;
 }
 
 .slogan {
-    font-size: 150px;
+  font-size: 300%;
 }
 
 .concept {
-  font-size: 90px;
+  font-size: 200%;
+}
+
+.text{
+  font-size: 100%;
 }
