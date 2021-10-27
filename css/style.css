@@ -1,0 +1,21 @@
+.title{
+  width: 600px;
+}
+
+.section {
+    text-align:center;
+    font-size: 3em;
+    color: white;
+}
+
+#fp-nav ul li a span {
+    background: white;
+}
+
+.slogan {
+    font-size: 150px;
+}
+
+.concept {
+  font-size: 90px;
+}
