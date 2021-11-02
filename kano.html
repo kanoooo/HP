@@ -11,7 +11,6 @@
     <body>
         <div id="fullpage">
             <div class="section">
-                <!-- ヘッダー　HOW TO PLAY(各ゲームの遊び方)/STORE/CONTACT(お問い合わせ)/ -->
                 <div class="row row-left">
                     <div class="col-12 col-relative">
                         <p class="p-absolute">Nantoka<br>Games</p>
@@ -27,7 +26,7 @@
                       <div class="col-md-4"><h2 class="concept">concept<br>concept</h2></div>
                     </div>
                     <div class="row d-flex align-items-center .justify-content-center">
-                        <div class="col-md-9"><p class="text">text text text text text text text text<br>text text text text text text text text<br>text text text text text text text text</p></div>
+                        <div class="col-md-9"><p class="row-left">text text text text text text text text text text text text text text text text text text text text text text text text</p></div>
                         <div class="col-md-3"><img src="image/anime.gif" alt="gif_anime" class="img-fluid"></div>
                       </div>
                   </div>
@@ -35,16 +34,15 @@
             <div class="section">
                 <div class="slide slide01">
                     <h2 class="concept">notice</h2>
-                    <!-- 吹き出しはサムネイルで、カーソルを乗せると動きながら拡大される（「Game_1 10万DL突破」「Game_2 開発中」など画像つきで） -->
                     <div class="row d-flex align-items-center .justify-content-center">
-                        <div class="col-md-4"><img src="image/notice_1.png" alt="notice_1" class="img-fluid" style="width:60%"></div>
-                        <div class="col-md-4"><img src="image/notice_2.png" alt="notice_2" class="img-fluid" style="width:60%"></div>
-                        <div class="col-md-4"><img src="image/notice_3.png" alt="notice_3" class="img-fluid" style="width:60%"></div>
+                        <div class="col-md-4 balloon"><img src="image/notice_1.png" alt="notice_1" class="img-fluid" style="width:60%"></div>
+                        <div class="col-md-4 balloon"><img src="image/notice_2.png" alt="notice_2" class="img-fluid" style="width:60%"></div>
+                        <div class="col-md-4 balloon"><img src="image/notice_3.png" alt="notice_3" class="img-fluid" style="width:60%"></div>
                     </div>
                     <div class="row d-flex align-items-center .justify-content-center">
-                        <div class="col-md-4"><img src="image/notice_4.png" alt="notice_4" class="img-fluid" style="width:60%"></div>
-                        <div class="col-md-4"><img src="image/notice_5.png" alt="notice_5" class="img-fluid" style="width:60%"></div>
-                        <div class="col-md-4"><img src="image/notice_6.png" alt="notice_6" class="img-fluid" style="width:40%"></div>
+                        <div class="col-md-4 balloon"><img src="image/notice_4.png" alt="notice_4" class="img-fluid" style="width:60%"></div>
+                        <div class="col-md-4 balloon"><img src="image/notice_5.png" alt="notice_5" class="img-fluid" style="width:60%"></div>
+                        <div class="col-md-4 balloon"><img src="image/notice_6.png" alt="notice_6" class="img-fluid" style="width:40%"></div>
                     </div>
                 </div>
             </div>
@@ -53,25 +51,36 @@
                     <div class="row">
                         <div class="col-5 youtube-explain">
                             <h2 class="concept">Game1</h2><br>
-                            <p class="text">text text text text text<br>text text text text text<br>text text text text text</p>
+                            <p class="row-left">text text text text text text text text text text text text text text text</p>
                         </div>
                         <div class="col-7">
-                            <iframe width="80%" height="80%"
-                                src="https://www.youtube.com/embed/5eMNbID8INM"
+                            <iframe width="100%" height="80%"
+                                src="https://www.youtube.com/embed/88s0cUzEB2Q"
                                 frameborder="0" allowfullscreen>
                             </iframe>
                         </div>
                     </div>
                 </div>
                 <div class="slide slide02">
-                  <h2>b</h2>
+                    <div class="row">
+                        <div class="col-5 youtube-explain">
+                            <h2 class="concept">Game2</h2><br>
+                            <p class="row-left">text text text text text text text text text text text text text text text</p>
+                        </div>
+                        <div class="col-7">
+                            <iframe width="100%" height="80%"
+                                src="https://www.youtube.com/embed/5eMNbID8INM"
+                                frameborder="0" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section">
                 <div class="slide slide01">
                 <!-- フッター　プライバシーポリシー -->
-                    <div class="row"><h2>会社概要やリンク、Twitter埋め込み</h2></div>
-                    <div class="row"><a class="twitter-timeline" data-theme="dark" data-width="250px" data-height="400px" href="https://twitter.com/Nintendo?ref_src=twsrc%5Etfw">Tweets by Nintendo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                    <div class="row"><h2>コピーライトやリンクなど</h2></div>
+                    <div class="row"><a class="twitter-timeline" data-width="250px" data-height="400px" href="https://twitter.com/Nintendo?ref_src=twsrc%5Etfw">Tweets by Nintendo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
                   </div>
             </div>
         </div>
@@ -82,11 +91,12 @@
         <script>
             jQuery(function () {
                 jQuery('#fullpage').fullpage({
-                    scrollOverflow:true,
+                    scrollOverflow: true,
                     sectionsColor: ['#ffd900', '#00cccc', '#ff9900', '#44ff00', '#962dff'],
                     navigation: true,
                     navigationPosition: 'right',
                     navigationTooltips: ['TOP', 'CONCEPT', 'NOTICE', 'GAMES', 'LINK',],
+                    slidesNavigation: true,
                 });
             });
         </script>
