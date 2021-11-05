@@ -52,6 +52,10 @@
   text-align:right;
 }
 
-.balloon {
-  width: 100vw;
+.card {
+  color:black
+}
+
+.card-text {
+  text-align:left;
 }
