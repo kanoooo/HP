@@ -52,7 +52,7 @@
   text-align:right;
 }
 
-.card {
+.card-body {
   color:black
 }
 
@@ -63,4 +63,15 @@
 .copyright {
   font-size: 2vw;
   text-align: center;
+}
+
+/* 上手くいってない*/
+.game-dl {
+  width: 5vh;
+}
+
+@media (max-width:768px) { 
+
+  p { color:red;}
+
 }
