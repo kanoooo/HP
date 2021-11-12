@@ -63,15 +63,24 @@
 .copyright {
   font-size: 2vw;
   text-align: center;
-}
-
-/* 上手くいってない*/
-.game-dl {
-  width: 5vh;
+  margin-top: 5vh;
 }
 
 @media (max-width:768px) { 
 
   p { color:red;}
 
+}
+
+.fp-controlArrow.fp-prev {
+  left: 1vw;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+  right: 4vw;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
 }
