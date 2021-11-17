@@ -1,3 +1,22 @@
+@media screen and (min-width:480px) { 
+    /*　for iPhone Landscape　(iPhone 横)　*/
+p {
+        background-color:red;
+    } 
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　for iPad 　*/
+ p {
+        background-color:#f10010;
+    }
+}
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+ p {
+        background-color:blue;
+    }
+}
+
 .section {
   text-align:center;
   /**font-size: 3em;*/
@@ -66,12 +85,6 @@
   margin-top: 5vh;
 }
 
-@media (max-width:768px) { 
-
-  p { color:red;}
-
-}
-
 .fp-controlArrow.fp-prev {
   left: 1vw;
   width: 0;
@@ -83,4 +96,61 @@
   right: 4vw;
   border-width: 38.5px 0 38.5px 34px;
   border-color: transparent transparent transparent #fff;
+}
+
+#menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 70;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+#menu li {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+#menu-line {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 101px;
+  height: 2px;
+  transition: all 600ms ease;
+}
+
+#menu a {
+  color: #fff;
+  padding: 0 1.1em 1.1em;
+}
+a {
+  text-decoration: none;
+}
+
+.menu-active {
+  font-weight: 700;
+}
+
+.plugins {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.9);
+    transition: opacity .2s,transform .2s;
+    transform-origin: 50% 0;
+    top: 34px;
+    padding: 15px 0;
+    width: 235px;
+    z-index: 999;
+}
+.submenu {
+    background: #fff;
+    border-radius: 15px;
+}
+.plugins {
+    visibility: hidden;
+    position: absolute;
 }
