@@ -79,14 +79,6 @@
   text-align:right;
 }
 
-.card-body {
-  color:black
-}
-
-.card-text {
-  text-align:left;
-}
-
 .copyright {
   font-size: 2vw;
   text-align: center;
@@ -143,6 +135,10 @@
 .plugins {
     visibility: hidden;
     position: absolute;
+}
+
+.br_game{
+  height:1px;
 }
 
 /*===================================
@@ -264,10 +260,10 @@ h1{
 }
 
 .back{
-  background: #cedce7;
-  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: #ff35bc;
+  background: -webkit-linear-gradient(45deg,  #ff35bcbb 20%,#ff77d2 100%);
+  background: -o-linear-gradient(45deg,  #ff35bc);
+  background: linear-gradient(45deg,  #ff35bc);
 }
 
 .front:after{
@@ -280,7 +276,7 @@ h1{
     content: '';
     display: block;
     opacity: .6;
-    background-color: #000;
+    background-color: #000000de;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     border-radius: 10px;
@@ -366,7 +362,7 @@ h1{
 
 .front .inner span{
   color: rgba(255,255,255,0.7);
-  font-family: 'Montserrat';
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
 }
 
@@ -388,3 +384,7 @@ h1{
     margin: 0 0 2rem 0;
   }
 }
+
+/*===================================
+　↑　カード
+===================================*/
