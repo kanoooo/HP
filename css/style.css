@@ -6,6 +6,12 @@
   .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
       visibility:hidden;
     }
+    .youtube-explain {
+        order: 2
+    }
+    .youtube {
+        order: 1
+    }
 }
 @media screen and (min-width:768px) and ( max-width:1024px) {
     /*　for iPad 　*/
@@ -15,6 +21,13 @@
   .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
     visibility:hidden;
   }
+    .youtube-explain {
+        order: 2
+    }
+    .youtube {
+        order: 1
+    }
+
 }
 @media screen and (min-width:1024px) {
     /*　for PC　*/
@@ -24,6 +37,13 @@
   .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
       visibility:visible;
     }
+    .youtube-explain {
+        order: 1
+    }
+    .youtube {
+        order: 2
+    }
+
 }
 
 .section {
@@ -388,3 +408,11 @@ h1{
 /*===================================
 　↑　カード
 ===================================*/
+
+.gameTtileTxt {
+    padding-bottom: 20px;
+}
+
+.youtube {
+    padding-top: 20px;
+}
