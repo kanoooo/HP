@@ -1,18 +1,22 @@
 @media screen and (min-width:480px) { 
     /*　for iPhone Landscape　(iPhone 横)　*/
-  p {
+    p {
         color:white;
-    } 
-  .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
-      visibility:hidden;
-    }
+        } 
+    .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+        visibility:hidden;
+        }
     .youtube-explain {
         order: 2
-    }
+            }
     .youtube {
         order: 1
+            }
     }
-}
+
+
+
+
 @media screen and (min-width:768px) and ( max-width:1024px) {
     /*　for iPad 　*/
   p {
@@ -415,4 +419,9 @@ h1{
 
 .youtube {
     padding-top: 20px;
+}
+
+.game-button {
+    width: 200px;
+    height: 100px;
 }
