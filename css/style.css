@@ -2,36 +2,35 @@
     /*　for iPhone Landscape　(iPhone 横)　*/
     p {
         color:white;
-        } 
+    } 
     .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
         visibility:hidden;
-        }
+    }
     .youtube-explain {
         order: 2
             }
     .youtube {
         order: 1
-            }
     }
+}
 
 
 
 
 @media screen and (min-width:768px) and ( max-width:1024px) {
     /*　for iPad 　*/
-  p {
+    p {
         color:white;
     }
-  .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
-    visibility:hidden;
-  }
+    .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+        visibility:hidden;
+    }
     .youtube-explain {
         order: 2
     }
     .youtube {
         order: 1
     }
-
 }
 @media screen and (min-width:1024px) {
     /*　for PC　*/
