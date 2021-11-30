@@ -1,0 +1,464 @@
+@media screen and (min-width:480px) { 
+    /*　for iPhone Landscape　(iPhone 横)　*/
+    p {
+        color:white;
+    } 
+    .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+        visibility:hidden;
+    }
+    .tap {
+        visibility:visible;
+    }
+    .youtube-explain {
+        order: 2
+            }
+    .youtube {
+        order: 1
+    }
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　for iPad 　*/
+    p {
+        color:white;
+    }
+    .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+        visibility:hidden;
+    }
+    .tap {
+        visibility:hidden;
+    }
+    .youtube-explain {
+        order: 2
+    }
+    .youtube {
+        order: 1
+    }
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    p {
+        color:white;
+    }
+    .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+        visibility:visible;
+    }
+    .tap {
+        visibility:hidden;
+    }
+    .youtube-explain {
+        order: 1
+    }
+    .youtube {
+        order: 2
+    }
+}
+
+.section {
+    text-align:center;
+    font-size: 4vw;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.row {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.row-left {
+    text-align:left;
+}
+
+.row-right {
+    text-align:right;
+}
+
+.col-relative {
+    position: relative;
+}
+
+/* fullpage.jsのnavigationの丸*/
+#fp-nav ul li a span , .fp-slidesNav ul li a span{
+    background: white;
+}
+
+.slogan {
+    font-size: 10vw;
+}
+
+.concept {
+    font-size: 7vw;
+}
+
+.img-hiyori {
+    height: 70vh;
+}
+
+.p-absolute {
+    font-size: 18vw;
+    position: absolute;
+    line-height: 200px;
+    margin-top: 7vh;
+}
+
+.div-hiyori {
+    margin-top: 30vh;
+    text-align:right;
+}
+
+.copyright {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+#menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 70;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+#menu-line {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 101px;
+    height: 2px;
+    transition: all 600ms ease;
+}
+
+#menu a {
+    color: #fff;
+    padding: 0 0.6em 0.3em;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.plugins {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.9);
+    transition: opacity .2s,transform .2s;
+    transform-origin: 50% 0;
+    top: 34px;
+    padding: 15px 0;
+    width: 235px;
+    z-index: 999;
+}
+
+.submenu {
+    background: #fff;
+    border-radius: 15px;
+}
+
+.plugins {
+    visibility: hidden;
+    position: absolute;
+}
+
+.br_game{
+    height:1px;
+}
+
+/*===================================
+　グローバルメニューの下線
+===================================*/
+
+.gnavi li a{
+  /*線の基点とするためrelativeを指定*/
+    position: relative;
+}
+
+.gnavi li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 3px;
+    background:white;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+/*===================================
+　矢印　＜　＞
+===================================*/
+
+.fp-controlArrow.fp-prev {
+    left: 4vw;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent rgba(255, 255, 255, 0.5) transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 4vw;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+}
+
+/*===================================
+　カード
+===================================*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.cols{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.container{
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+}
+
+.front,
+.back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back{
+    background: #ff35bc;
+    background: -webkit-linear-gradient(45deg,  #ff35bcbb 20%,#ff77d2 100%);
+    background: -o-linear-gradient(45deg,  #ff35bc);
+    background: linear-gradient(45deg,  #ff35bc);
+}
+
+.front:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000000de;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .back{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .front{
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.front .inner span{
+    color: rgba(255,255,255,0.7);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+/*===================================
+　↑　カード
+===================================*/
+
+.gameTtileTxt {
+    padding-bottom: 20px;
+}
+
+.youtube {
+    padding-top: 20px;
+}
+
+.game-button {
+    width: 200px;
+    height: 100px;
+}
+
+.geme-title{
+    font-size: 12vh;
+}
+
+.game-text{
+    font-size: 7vh;
+}
+
+.section-game
+{
+    padding: 2.5vw;
+}
+
+.btn-orange-moon {
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 3px solid #eee;
+}
+
+.btn-rounded {
+    border-radius: 35px;
+}
+
+.btn:hover {
+    color:aqua;
+}
