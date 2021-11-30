@@ -14,9 +14,6 @@
     }
 }
 
-
-
-
 @media screen and (min-width:768px) and ( max-width:1024px) {
     /*　for iPad 　*/
     p {
@@ -32,13 +29,14 @@
         order: 1
     }
 }
+
 @media screen and (min-width:1024px) {
     /*　for PC　*/
-  p {
+    p {
         color:white;
     }
-  .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
-      visibility:visible;
+    .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+        visibility:visible;
     }
     .youtube-explain {
         order: 1
@@ -46,98 +44,97 @@
     .youtube {
         order: 2
     }
-
 }
 
 .section {
-  text-align:center;
-  font-size: 4vw;
-  color: white;
-  font-family: 'Noto Sans JP', sans-serif;
+    text-align:center;
+    font-size: 4vw;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .row {
-  margin-left: 5vw;
-  margin-right: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .row-left {
-  text-align:left;
+    text-align:left;
 }
 
 .row-right {
-  text-align:right;
+    text-align:right;
 }
 
 .col-relative {
-  position: relative;
+    position: relative;
 }
 
 /* fullpage.jsのnavigationの丸*/
 #fp-nav ul li a span , .fp-slidesNav ul li a span{
-  background: white;
+    background: white;
 }
 
 .slogan {
-  font-size: 10vw;
+    font-size: 10vw;
 }
 
 .concept {
-  font-size: 7vw;
+    font-size: 7vw;
 }
 
 .img-hiyori {
-  height: 70vh;
+    height: 70vh;
 }
 
 .p-absolute {
-  font-size: 18vw;
-  position: absolute;
-  line-height: 200px;
-  margin-top: 7vh;
+    font-size: 18vw;
+    position: absolute;
+    line-height: 200px;
+    margin-top: 7vh;
 }
 
 .div-hiyori {
-  margin-top: 30vh;
-  text-align:right;
+    margin-top: 30vh;
+    text-align:right;
 }
 
 .copyright {
-  font-size: 2vw;
-  text-align: center;
-  margin-top: 5vh;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 5vh;
 }
 
 #menu {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 70;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  letter-spacing: 1px;
-  font-size: 1.5em;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 70;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    letter-spacing: 1px;
+    font-size: 1.5em;
 }
 
 #menu li {
-  display: inline-block;
-  margin: 10px 0;
+    display: inline-block;
+    margin: 10px 0;
 }
 
 #menu-line {
-  position: absolute;
-  top: 24px;
-  left: 0;
-  width: 101px;
-  height: 2px;
-  transition: all 600ms ease;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 101px;
+    height: 2px;
+    transition: all 600ms ease;
 }
 
 #menu a {
-  color: #fff;
-  padding: 0 0.6em 0.3em;
-  text-decoration: none;
-  font-weight: 900;
+    color: #fff;
+    padding: 0 0.6em 0.3em;
+    text-decoration: none;
+    font-weight: 900;
 }
 
 .plugins {
@@ -151,17 +148,19 @@
     width: 235px;
     z-index: 999;
 }
+
 .submenu {
     background: #fff;
     border-radius: 15px;
 }
+
 .plugins {
     visibility: hidden;
     position: absolute;
 }
 
 .br_game{
-  height:1px;
+    height:1px;
 }
 
 /*===================================
@@ -170,29 +169,29 @@
 
 .gnavi li a{
   /*線の基点とするためrelativeを指定*/
-position: relative;
+    position: relative;
 }
 
 .gnavi li a::after {
-  content: '';
-  /*絶対配置で線の位置を決める*/
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  /*線の形状*/
-  width: 80%;
-  height: 3px;
-  background:white;
-  /*アニメーションの指定*/
-  transition: all .3s;
-  transform: scale(0, 1);/*X方向0、Y方向1*/
-  transform-origin: center top;/*上部中央基点*/
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 3px;
+    background:white;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
 }
 
 /*現在地とhoverの設定*/
 .gnavi li.current a::after,
 .gnavi li a:hover::after {
-  transform: scale(1, 1);/*X方向にスケール拡大*/
+    transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
 /*===================================
@@ -200,97 +199,97 @@ position: relative;
 ===================================*/
 
 .fp-controlArrow.fp-prev {
-  left: 1vw;
-  width: 0;
-  border-width: 38.5px 34px 38.5px 0;
-  border-color: transparent #fff transparent transparent;
+    left: 1vw;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
 }
 
 .fp-controlArrow.fp-next {
-  right: 4vw;
-  border-width: 38.5px 0 38.5px 34px;
-  border-color: transparent transparent transparent #fff;
+    right: 4vw;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
 }
 
 /*===================================
 　カード
 ===================================*/
 *{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 h1{
-  font-size: 2.5rem;
-  font-family: 'Montserrat';
-  font-weight: normal;
-  color: #444;
-  text-align: center;
-  margin: 2rem 0;
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
 }
 
 .wrapper{
-  width: 90%;
-  margin: 0 auto;
-  max-width: 80rem;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
 }
 
 .cols{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .col{
-  width: calc(25% - 2rem);
-  margin: 1rem;
-  cursor: pointer;
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
 }
 
 .container{
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
 }
 
 .front,
 .back{
-  background-size: cover;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
-  border-radius: 10px;
-  background-position: center;
-  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  text-align: center;
-  min-height: 280px;
-  height: auto;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 1.5rem;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .back{
-  background: #ff35bc;
-  background: -webkit-linear-gradient(45deg,  #ff35bcbb 20%,#ff77d2 100%);
-  background: -o-linear-gradient(45deg,  #ff35bc);
-  background: linear-gradient(45deg,  #ff35bc);
+    background: #ff35bc;
+    background: -webkit-linear-gradient(45deg,  #ff35bcbb 20%,#ff77d2 100%);
+    background: -o-linear-gradient(45deg,  #ff35bc);
+    background: linear-gradient(45deg,  #ff35bc);
 }
 
 .front:after{
-  position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
@@ -304,13 +303,14 @@ h1{
             backface-visibility: hidden;
     border-radius: 10px;
 }
+
 .container:hover .front,
 .container:hover .back{
     -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+       transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .back{
@@ -351,42 +351,42 @@ h1{
 }
 
 .container:hover .back{
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .container:hover .front{
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .front .inner p{
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  position: relative;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
 .front .inner p:after{
-  content: '';
-  width: 4rem;
-  height: 2px;
-  position: absolute;
-  background: #C6D4DF;
-  display: block;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -.75rem;
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
 }
 
 .front .inner span{
-  color: rgba(255,255,255,0.7);
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 300;
+    color: rgba(255,255,255,0.7);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
 }
 
 @media screen and (max-width: 64rem){
