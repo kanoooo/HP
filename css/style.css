@@ -2,7 +2,7 @@
     /*　for iPhone Landscape　(iPhone 横)　*/
     p {
         color:white;
-    } 
+    }
     .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
         visibility:hidden;
     }
@@ -100,7 +100,7 @@
     font-size: 18vw;
     position: absolute;
     line-height: 200px;
-    margin-top: 7vh;
+    margin-top: 10vh;
 }
 
 .div-hiyori {
@@ -144,6 +144,7 @@
     padding: 0 0.6em 0.3em;
     text-decoration: none;
     font-weight: 900;
+    font-size: 3.5vh;
 }
 
 .plugins {
@@ -231,7 +232,7 @@
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Montserrat';
     font-weight: normal;
     color: #444;
@@ -452,6 +453,14 @@ h1{
     background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
+    border: 2px solid #eee;
+}
+
+.btn-purple-moon {
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
     border: 3px solid #eee;
 }
 
@@ -462,3 +471,8 @@ h1{
 .btn:hover {
     color:aqua;
 }
+
+/* 違った
+.form-control {
+    color:gainsboro;
+}*/
