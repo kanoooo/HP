@@ -6,9 +6,6 @@
     .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
         visibility:hidden;
     }
-    .tap {
-        visibility:visible;
-    }
     .youtube-explain {
         order: 2
             }
@@ -23,9 +20,6 @@
         color:white;
     }
     .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
-        visibility:hidden;
-    }
-    .tap {
         visibility:hidden;
     }
     .youtube-explain {
@@ -43,9 +37,6 @@
     }
     .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
         visibility:visible;
-    }
-    .tap {
-        visibility:hidden;
     }
     .youtube-explain {
         order: 1
@@ -111,7 +102,7 @@
 .copyright {
     font-size: 2vw;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 #menu {
@@ -454,6 +445,7 @@ h1{
     background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border: 2px solid #eee;
+    margin-top:20px;
 }
 
 .btn-purple-moon {
@@ -472,7 +464,28 @@ h1{
     color:aqua;
 }
 
-/* 違った
+.contact {
+    font-size: 4vw;
+    margin-top: 10vh;
+}
+
+.tap {
+    text-align: center;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+/* テキストエリア？のを変えたい
+.button, input, optgroup, select, textarea {
+    color:darkgray;
+}
+*/
+
+/* テキストエリア？の色を変えたい
 .form-control {
     color:gainsboro;
+}*/
+
+/* テキストエリア？の色を変えたい
+input {
+color: red;
 }*/
