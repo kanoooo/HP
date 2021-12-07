@@ -28,6 +28,9 @@
     .youtube {
         order: 1
     }
+    .tap{
+        visibility:visible;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -43,6 +46,9 @@
     }
     .youtube {
         order: 2
+    }
+    .tap{
+        visibility:hidden;
     }
 }
 
@@ -250,7 +256,7 @@ h1{
 
 .col{
     width: calc(25% - 2rem);
-    margin: 1rem;
+/*    margin: 1rem;*/
     cursor: pointer;
 }
 
@@ -284,7 +290,7 @@ h1{
 
 .back{
     background: #ff35bc;
-    background: -webkit-linear-gradient(45deg,  #ff35bcbb 20%,#ff77d2 100%);
+    background: -webkit-linear-gradient(45deg,  #ff35bc 20%,#ff77d2 100%);
     background: -o-linear-gradient(45deg,  #ff35bc);
     background: linear-gradient(45deg,  #ff35bc);
 }
@@ -318,7 +324,7 @@ h1{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
 }
 
 .inner{
@@ -470,9 +476,102 @@ h1{
 }
 
 .tap {
-    text-align: center;
+    text-align: right;
     color:rgba(255, 255, 255, 0.5);
+    font-size:3vw;
 }
+
+.comic{
+    height: 75vh;
+}
+
+/*===================================
+　↓　モーダル
+===================================*/
+
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px 10px;
+  text-align: center
+}
+
+.modal-wrapper:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .4s, visibility .4s;
+}
+
+.modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -.05em;
+  vertical-align: middle;
+  content: ""
+}
+
+.modal-wrapper .modal-window {
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  padding: 30px 30px 15px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+  vertical-align: middle
+}
+
+.modal-wrapper .modal-window .modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: left
+}
+
+.modal-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8)
+}
+
+.modal-wrapper .modal-close {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  color: #95979c !important;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0
+}
+
+.modal-wrapper .modal-close:hover {
+  color: #2b2e38 !important
+}
+
+/*===================================
+　↑　モーダル
+===================================*/
+
 
 /* テキストエリア？のを変えたい
 .button, input, optgroup, select, textarea {
