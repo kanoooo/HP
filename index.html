@@ -12,32 +12,32 @@
     <body>
         <ul id="menu" class="gnavi">
             <li>
-                <a href="">
+                <a class="nav-link" href="1">
                     TOP
                 </a>
             </li>
             <li>
-                <a href="">
+                <a class="nav-link" href="2">
                     CONCEPT
                 </a>
             </li>
             <li>
-                <a href="">
+                <a class="nav-link" href="3">
                     GAMES
                 </a>
             </li>
             <li>
-                <a href="">
+                <a class="nav-link" href="4">
                     NEWS
                 </a>
             </li>
             <li>
-                <a href="">
+                <a class="nav-link" href="5">
                     COMICS
                 </a>
             </li>
             <li>
-                <a href="">
+                <a class="nav-link" href="6">
                     CONTACT
                 </a>
             </li>
@@ -330,6 +330,13 @@
                     slidesNavigation: true,
                     verticalCentered: true,
                     loopBottom: true,
+                });
+            });
+            $(document).ready(function() {
+                $(".nav-link").click(function () {
+                    var num = $(this).attr('href');
+                    $.fn.fullpage.moveTo(num);
+                    return false;
                 });
             });
         </script>
