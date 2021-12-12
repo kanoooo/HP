@@ -127,7 +127,6 @@
                   <div class="row-right">
                       <div class="col-md-12">
                           <div class="appreach"><img src="./img/webclipicon.png" alt="Appreach" class="appreach__icon" style=""><div class="appreach__detail" style=""><p class="appreach__name">Appreach</p><p class="appreach__info"><span class="appreach__price">無料</span><span class="appreach__posted">posted with<a href="https://mama-hack.com/app-reach/" title="アプリーチ" target="_blank" rel="nofollow">アプリーチ</a></span></p></div><div class="appreach__links" style=""><a href="https://mama-hack.com/app-reach/" target="_blank" rel="nofollow" class="appreach__aslink"><img src="https://nabettu.github.io/appreach/img/itune_ja.svg"></a><a href="https://mama-hack.com/app-reach/" target="_blank" rel="nofollow" class="appreach__gplink"><img src="https://nabettu.github.io/appreach/img/gplay_ja.png"></a></div></div>
-                          </a>
                       </div>
                   </div>
               </div>
@@ -136,7 +135,9 @@
                 <div class="slide slide01">
                     <div class="wrapper">
                         <div class="row tap">
-                             ↓tap!
+                            <div class="col-md-12">
+                                ↓tap!
+                            </div>
                         </div>
                         <div class="cols row">
                             <div class="col" ontouchstart="this.classList.toggle('hover');">
@@ -194,7 +195,7 @@
                                     <p>text text text text text text text text
                                         text text text text text text text text
                                         <br>
-                                            <button class="btn btn-orange-moon btn-rounded">
+                                            <button class="btn btn-orange-moon btn-rounded" data-toggle="modal" data-target="#myModal">
                                                 詳細
                                             </button>
                                     </p>
@@ -263,7 +264,7 @@
                                 <p>text text text text text text text text
                                     text text text text text text text text
                                     <br>
-                                    <button class="btn btn-orange-moon btn-rounded">
+                                    <button class="btn btn-orange-moon btn-rounded" data-toggle="modal" data-target="#myModal">
                                         詳細
                                     </button>
                                 </p>
@@ -314,12 +315,47 @@
                     </div>
                     <div class="ajax-iine" data-pid="test_like_button" data-tid="tpl-sb-heart-m"></div>
                     <div class="copyright">© 2022 ナントカゲームス</div>
+                </div>
             </div>
+
+            
+
+            <div class="section">
+                 <div class="container">
+                     <h1>Modal Example</h1>
+                     <!-- Trigger the modal with a button -->
+                     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                </div>
+            </div>
+
         </div>
+            
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog" style="position:relative;">
+           <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                 </div>
+                 <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 </div>
+              </div>
+           </div>
+        </div>
+            
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
         <script>
             jQuery(function () {
                 jQuery('#fullpage').fullpage({

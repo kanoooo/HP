@@ -476,7 +476,6 @@ h1{
 }
 
 .tap {
-    text-align: right;
     color:rgba(255, 255, 255, 0.5);
     font-size:3vw;
 }
@@ -665,19 +664,6 @@ h1{
 /*===================================
 　↑　アプリーチ
 ===================================*/
-
-/* テキストエリア？のを変えたい
-.button, input, optgroup, select, textarea {
-    color:darkgray;
+.fp-enabled .modal{
+   position:fixed !important;
 }
-*/
-
-/* テキストエリア？の色を変えたい
-.form-control {
-    color:gainsboro;
-}*/
-
-/* テキストエリア？の色を変えたい
-input {
-color: red;
-}*/
