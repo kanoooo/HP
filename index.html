@@ -195,7 +195,7 @@
                                     <p>text text text text text text text text
                                         text text text text text text text text
                                         <br>
-                                            <button class="btn btn-orange-moon btn-rounded" data-toggle="modal" data-target="#myModal">
+                                            <button class="btn btn-orange-moon btn-rounded" data-toggle="modal" data-target="#myModal2">
                                                 詳細
                                             </button>
                                     </p>
@@ -264,7 +264,7 @@
                                 <p>text text text text text text text text
                                     text text text text text text text text
                                     <br>
-                                    <button class="btn btn-orange-moon btn-rounded" data-toggle="modal" data-target="#myModal">
+                                    <button class="btn btn-orange-moon btn-rounded" data-toggle="modal" data-target="#myModal2">
                                         詳細
                                     </button>
                                 </p>
@@ -278,7 +278,7 @@
             </div>
             <div class="section">
                 <div class="slide slide01">
-                    <img src="image/comic_01.png" alt="comic_01" class="comic">
+                    <img src="image/comic_01.png" alt="comic_01" class="comic" data-toggle="modal" data-target="#myModal3">
                 </div>
                 <div class="slide slide02">
                     <img src="image/comic_02.png" alt="comic_02" class="comic">
@@ -349,7 +349,40 @@
               </div>
            </div>
         </div>
-            
+
+        <!-- Modal2 -->
+        <div class="modal fade" id="myModal2" role="dialog" style="position:relative;">
+           <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header2</h4>
+                 </div>
+                 <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <!-- Modal3 -->
+        <div class="modal fade" id="myModal3" role="dialog" style="position:relative;">
+           <div class="modal-dialog modal-lg modal-transparent">
+
+              <!-- Modal content-->
+              <div class="modal-content" style="text-align: center">
+                 <div class="modal-body">
+                    <img src="image/comic_01.png" alt="comic_01" class="comic-org">
+                 </div>
+              </div>
+           </div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
